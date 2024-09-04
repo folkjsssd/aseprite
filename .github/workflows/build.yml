@@ -1,22 +1,12 @@
-
 name: build
-
 on: [push, pull_request]
-
 jobs:
-
 build:
-
 runs-on: ${{ matrix.os }}
-
 strategy:
-
 fail-fast: false
-
 matrix:
-
 os: [windows-latest]
-
 build_type: [Release]
 
 enable_ui: [on]
